@@ -4,13 +4,13 @@ import Layout from "../../layouts/Layout.astro";
 import { formatDate } from "../../lib/utils";
 
 export async function getStaticPaths() {
-  const posts = await getCollection("rfc6749");
+  const posts = await getCollection("rfc6749-lite");
   return posts.map((post) => ({
     params: { slug: post.slug },
     props: post,
   }));
 }
-type Props = CollectionEntry<"rfc6749">;
+type Props = CollectionEntry<"rfc6749-lite">;
 
 const post = Astro.props;
 const { Content } = await post.render();

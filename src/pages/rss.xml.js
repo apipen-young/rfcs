@@ -17,10 +17,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 
 export async function GET(context) {
   const posts = await getCollection("posts");
-  const rfc6749 = await getCollection("rfc6749");
+  const rfc6749 = await getCollection("rfc6749-lite");
 
   const items = [...posts, ...rfc6749].map((entry) => {
-    const basePath = entry.collection === "posts" ? "/posts" : "/rfc6749";
+    const basePath = entry.collection === "posts" ? "/posts" : "/rfc6749-lite";
     return {
       ...entry.data,
       link: `${basePath}/${entry.slug}/`,

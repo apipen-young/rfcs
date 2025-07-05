@@ -20,4 +20,4 @@ const rfc6749 = defineCollection({
   }),
 });
 
-export const collections = { posts, rfc6749 };
+export const collections = { posts, "rfc6749-lite": rfc6749 };

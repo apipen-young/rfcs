@@ -4,7 +4,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from "../../consts";
 import Layout from "../../layouts/Layout.astro";
 import { formatDate } from "../../lib/utils";
 
-const collection = await getCollection("rfc6749");
+const collection = await getCollection("rfc6749-lite");
 const posts = collection.sort(
   (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
 );
@@ -17,7 +17,7 @@ const posts = collection.sort(
         posts.map((post) => (
           <li>
             <a
-              href={`/rfc6749/${post.slug}`}
+              href={`/rfc6749-lite/${post.slug}`}
               class="group flex justify-between gap-3"
             >
               <span class="group-hover:underline">{post.data.title}</span>
