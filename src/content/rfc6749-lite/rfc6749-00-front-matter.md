@@ -8,7 +8,10 @@ date: Jul 05 2025
 
 ### \-note-
 
-**RFC**는 **Request for Comments** 의 약자로. 인터넷에서 사용되는 표준 기술(e.g., HTTP, JWT, OAuth 2.0등)을 정의하는 **공식문서**입니다. IETF(Internet Engineering Task Force)가 만들고 승인합니다.
+**RFC**는 **Request for Comments** 의 약자로. 인터넷에서 사용되는 표준 기술(e.g., HTTP, JWT, OAuth 2.0등)을 정의하는 **명세(Specification)**입니다. IETF(Internet Engineering Task Force)가 만들고 승인합니다.
+
+명세(Specification)란 개발자들이 특정 기술을 동일한 방식으로 구현할 수 있게 정해둔 규칙을 적어둔 문서입니다.
+
 
 ## Abstract
 
