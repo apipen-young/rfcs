@@ -20,4 +20,14 @@ const rfc6749 = defineCollection({
   }),
 });
 
-export const collections = { posts, "rfc6749-lite": rfc6749 };
+const oauth2 = defineCollection({
+  type: "content",
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    date: z.coerce.date(),
+    image: z.string().default("/static/blog-placeholder.png"),
+  }),
+});
+
+export const collections = { posts, "rfc6749-lite": rfc6749, "oauth2-core": oauth2 };
